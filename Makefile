@@ -17,6 +17,8 @@ js: webassembly/crc64_ecma_182.cc webassembly/crc64_ecma_182.h
 			'UTF8ToString'\
 		]" \
 		-s WASM=0 \
+		-s NODEJS_CATCH_EXIT=0 \
+		-s NODEJS_CATCH_REJECTION=0 \
 		-s WASM_ASYNC_COMPILATION=0 && echo 'WebAssembly done.'
 
 test:
