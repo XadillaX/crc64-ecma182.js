@@ -16,6 +16,7 @@ js: webassembly/crc64_ecma_182.cc webassembly/crc64_ecma_182.h
 			'writeArrayToMemory',\
 			'UTF8ToString'\
 		]" \
+		-s ALLOW_MEMORY_GROWTH=1 \
 		-s WASM=0 \
 		-s NODEJS_CATCH_EXIT=0 \
 		-s NODEJS_CATCH_REJECTION=0 \
